@@ -24,6 +24,7 @@ repos:
     rev: 7.1.1
     hooks:
       - id: flake8
+        files: ^(?!newvenv/).*\.py$
 
   - repo: https://github.com/tconbeer/sqlfmt
     rev: v0.21.0
