@@ -101,8 +101,8 @@ jobs:
       # Copy the profiles.yml file to the correct location
       - name: Copy profiles.yml to /home/runner/.dbt
         run: |
-          mkdir -p ~/.dbt
-          cp ./profiles.yml ~/.dbt/profiles.yml
+          mkdir -p /home/runner/.dbt
+          cp .dbt/profiles.yml /home/runner/.dbt/profiles.yml
 
       # Run dbt build for CI target
       - name: Run dbt build (CI)
