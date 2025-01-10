@@ -43,7 +43,7 @@ jobs:
       - name: Copy profiles.yml to /home/runner/.dbt
         run: |
           mkdir -p /home/runner/.dbt
-          cp ~/.dbt/profiles.yml /home/runner/.dbt/profiles.yml
+          cp nikita/.dbt/profiles.yml /home/runner/.dbt/profiles.yml
 
       # Compile the dbt project
       - name: Compile dbt project
