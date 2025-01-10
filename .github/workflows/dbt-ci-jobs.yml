@@ -102,7 +102,7 @@ jobs:
       - name: Copy profiles.yml to /home/runner/.dbt
         run: |
           mkdir -p /home/runner/.dbt
-          cp .dbt/profiles.yml /home/runner/.dbt/profiles.yml
+          cp ~/.dbt/profiles.yml /home/runner/.dbt/profiles.yml
 
       # Run dbt build for CI target
       - name: Run dbt build (CI)
