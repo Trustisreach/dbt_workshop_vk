@@ -1,0 +1,12 @@
+dbtworkshopvk:
+  outputs:
+    dev:
+      dbname: PostgreSQL-3370
+      host: 146.185.209.19
+      pass: d9t5201Co959!kDMo
+      port: 5432
+      schema: dev
+      threads: 1
+      type: postgres
+      user: user
+  target: dev

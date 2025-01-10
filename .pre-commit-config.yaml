@@ -50,3 +50,11 @@ repos:
 
       - id: check-macro-has-description
         files: ^(macros/).*$
+
+  - repo: https://github.com/psf/black
+    rev: 24.8.0
+    hooks:
+      - id: black
+        language_version: python3.12
+        files: ^(?!profiles\.yml$).*\.py$ # Исключаем profiles.yml, но применяем ко всем .py файлам
+
